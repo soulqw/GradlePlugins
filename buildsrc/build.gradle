@@ -1,0 +1,23 @@
+apply plugin: 'groovy'
+apply plugin: 'maven'
+
+dependencies {
+    // gradle sdk
+    implementation gradleApi()
+    // groovy sdk
+    implementation localGroovy()
+
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+}
+
+uploadArchives {
+    repositories {
+        mavenDeployer {
+            //本地的Maven地址
+            repository(url: 'file:///Users/cd5160866/Documents/maven/')
+        }
+    }
+}
+
+group='com.qw.plugin'
+version='1.0.0'
