@@ -14,10 +14,11 @@ uploadArchives {
     repositories {
         mavenDeployer {
             //本地的Maven地址
-            repository(url: 'file:///Users/cd5160866/Documents/maven/')
+            repository(url: 'file:///Users/eleme/Documents/localMaven/')
+
         }
     }
 }
 
 group='com.qw.plugin'
-version='1.0.0'
+version='1.0.1'

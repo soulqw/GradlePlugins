@@ -1,3 +1,9 @@
 rootProject.name='GradleDemo'
+
+def initMinshengGradleEnvironment(){
+    println"this is start for qinWei gradlew buildDings"
+}
+//settings.gradle 加载的时候，会执行 initMinshengGradleEnvironment
+initMinshengGradleEnvironment()
 include ':app'
-include ':buildsrc'
+include ':Plugins'
